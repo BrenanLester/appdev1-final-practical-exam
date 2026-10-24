@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:global(body) {
+  margin: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 44fr) minmax(0, 56fr);
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 7.5vh 3.7vw 2.5vh 0;
+  padding: 7.5svh 3.7vw 2.5svh 0;
+  background-color: #fff;
+}
+
+.leftSection {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 12.3vh 2vw 0 11.6vw;
+  padding: 12.3svh 2vw 0 11.6vw;
+}
+
+.title {
+  margin: 0;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.25rem, 2.083333vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.rightSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.form {
+  width: 26.2vw;
+  max-width: 100%;
+  margin-top: 4.166667vw;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.75rem, 0.911458vw, 1.125rem);
+  line-height: 1.5;
+}
+
+.field input {
+  box-sizing: border-box;
+  width: 100%;
+  height: clamp(2rem, 2.083333vw, 2.5rem);
+  padding: 0 0.585938vw;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  font-size: clamp(0.625rem, 0.651042vw, 0.8125rem);
+}
+
+.field input::placeholder {
+  color: #d9d9d9;
+  opacity: 1;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 0.390625vw;
+  margin-top: 1.5625vw;
+  font-size: clamp(0.625rem, 0.651042vw, 0.8125rem);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.agreement input {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  accent-color: #3a5b22;
+  cursor: pointer;
+}
+
+.terms {
+  text-decoration: underline;
+}
+
+.signupButton {
+  display: block;
+  width: 100%;
+  min-height: clamp(2rem, 2.083333vw, 2.5rem);
+  margin-top: 1.822917vw;
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3a5b22;
+  color: #fff;
+  font-family: inherit;
+  font-size: clamp(0.8125rem, 0.846354vw, 1rem);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background-color: #304c1c;
+}
+
+.field input:focus-visible,
+.agreement input:focus-visible,
+.signupButton:focus-visible,
+.socialButton:focus-visible {
+  outline: 2px solid #3a5b22;
+  outline-offset: 3px;
+}
+
+.bottomSection {
+  width: 26.2vw;
+  max-width: 100%;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 0.390625vw;
+  margin-top: 4.166667vw;
+  font-size: clamp(0.5625rem, 0.585938vw, 0.75rem);
+  line-height: 1.5;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #f0f0f0;
+}
+
+.socialButtons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5625vw;
+  margin-top: 4.166667vw;
+}
+
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.651042vw;
+  min-width: 0;
+  min-height: clamp(2rem, 2.083333vw, 2.5rem);
+  padding: 2px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  font-size: clamp(0.6875rem, 0.78125vw, 1rem);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.socialButton img {
+  display: block;
+  flex-shrink: 0;
+  width: clamp(1.25rem, 1.5625vw, 1.875rem);
+  height: clamp(1.25rem, 1.5625vw, 1.875rem);
+  object-fit: contain;
+}
+
+.socialButton:hover {
+  background-color: #f7f7f7;
+}
+
+.accountPrompt {
+  margin: 1.5625vw 0 0;
+  text-align: center;
+  font-size: clamp(0.75rem, 0.911458vw, 1.125rem);
+  line-height: 1.5;
+}
+
+.signIn {
+  margin-left: 0.260417vw;
+  color: #0f3dde;
+}
+
+@media (max-width: 900px) {
+  .socialButtons {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  max-height: 90svh;
+  aspect-ratio: 828 / 936;
+  object-fit: contain;
+  object-position: right top;
+}
