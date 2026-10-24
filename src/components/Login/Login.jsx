@@ -1,6 +1,7 @@
 import blossomFlower from '../../assets/blossom-flower.svg'
 import googleLogo from '../../assets/icons-google-logo.svg'
 import appleLogo from '../../assets/icons-apple-logo.svg'
+import { Input } from '@/components/ui/input'
 import styles from './Login.module.css'
 
 function Login() {
@@ -82,4 +83,3 @@ function Login() {
 }
 
 export default Login
-import { Input } from '@/components/ui/input'
