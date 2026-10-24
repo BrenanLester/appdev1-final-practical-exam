@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --color-white: #fff;
+  --color-text: #000;
+  --color-border: #d9d9d9;
+  --color-primary: #3a5b22;
+  --color-primary-hover: #304c1c;
+  --color-divider: #f0f0f0;
+  --color-surface-hover: #f7f7f7;
+  --color-link: #0f3dde;
+  --color-recovery-link: #0c2a92;
+
+  /* Typography: retain the original fluid sizes and limits. */
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-title: clamp(1.25rem, 2.083333vw, 2.5rem);
+  --font-size-subtitle: clamp(0.875rem, 1.041667vw, 1.25rem);
+  --font-size-body: clamp(0.75rem, 0.911458vw, 1.125rem);
+  --font-size-small: clamp(0.625rem, 0.651042vw, 0.8125rem);
+  --font-size-button: clamp(0.8125rem, 0.846354vw, 1rem);
+  --font-size-social: clamp(0.6875rem, 0.78125vw, 1rem);
+  --font-size-divider: clamp(0.5625rem, 0.585938vw, 0.75rem);
+  --font-size-recovery-link: clamp(0.625rem, 0.716146vw, 0.875rem);
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-base: 1.5;
+
+  /* Fixed and fluid spacing */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-fluid-xs: 0.260417vw;
+  --space-fluid-sm: 0.390625vw;
+  --space-fluid-md: 0.585938vw;
+  --space-fluid-lg: 0.651042vw;
+  --space-fluid-xl: 1.5625vw;
+  --space-fluid-2xl: 4.166667vw;
+  --signup-submit-gap: 1.822917vw;
+  --login-submit-gap: 1.302083vw;
+
+  /* Borders and controls */
+  --border-width: 1px;
+  --border-radius-control: 10px;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+  --control-height: clamp(2rem, 2.083333vw, 2.5rem);
+  --checkbox-size: 10px;
+  --social-icon-size: clamp(1.25rem, 1.5625vw, 1.875rem);
+
+  /* Auth page layout, including each page's intentional offsets */
+  --auth-columns: minmax(0, 44fr) minmax(0, 56fr);
+  --auth-content-width: 26.2vw;
+  --auth-image-ratio: 828 / 936;
+  --page-min-height: 100vh;
+  --page-padding: 7.5vh 3.7vw 2.5vh 0;
+  --signup-section-padding: 12.3vh 2vw 0 11.6vw;
+  --login-section-padding: 14.6vh 2vw 0 11.5vw;
+  --auth-image-max-height: 90vh;
+}
+
+/* Preserve the existing viewport-unit fallback for older browsers. */
+@supports (height: 100svh) {
+  :root {
+    --page-min-height: 100svh;
+    --page-padding: 7.5svh 3.7vw 2.5svh 0;
+    --signup-section-padding: 12.3svh 2vw 0 11.6vw;
+    --login-section-padding: 14.6svh 2vw 0 11.5vw;
+    --auth-image-max-height: 90svh;
+  }
+}
+
+body {
+  margin: 0;
+}
