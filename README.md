@@ -1,0 +1,3 @@
+Reflection:
+
+What i learned on this final examination is to install and configure Tailwind CSS and shadcn/ui. I also learned how to set it up, how it affects the design from the standard css. I also enjoyed doing the practical exam, honestly having a clear instruction and allowing AI was really the one that got me this far on the exam. There are still things that i don't know and things that i forgot and AI helps me for those things. I also use ai to debug and analyze if what i did was correct and if the problem/error is out of my knowledge AI also helps me out. Overall my second realization on this exam is that correct usage of ai can helps you finish the job well done.
