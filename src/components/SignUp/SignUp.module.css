@@ -1,0 +1,36 @@
+:global(body) {
+  margin: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 44fr) minmax(0, 56fr);
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 7.5vh 3.7vw 2.5vh 0;
+  padding: 7.5svh 3.7vw 2.5svh 0;
+  background-color: #fff;
+}
+
+.leftSection {
+  min-width: 0;
+}
+
+.rightSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  max-height: 90svh;
+  aspect-ratio: 828 / 936;
+  object-fit: contain;
+  object-position: right top;
+}
