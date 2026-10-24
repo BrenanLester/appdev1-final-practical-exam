@@ -64,7 +64,7 @@ function Login() {
             </button>
           </div>
           <p className={styles.accountPrompt}>
-            Have an account? <span className={styles.signIn}>Sign In</span>
+            Don’t have an account? <span className={styles.signIn}>Sign Up</span>
           </p>
         </div>
       </section>
