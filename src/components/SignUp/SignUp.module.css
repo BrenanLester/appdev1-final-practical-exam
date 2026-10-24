@@ -44,6 +44,95 @@
   min-width: 0;
 }
 
+.form {
+  width: 26.2vw;
+  max-width: 100%;
+  margin-top: 4.166667vw;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.75rem, 0.911458vw, 1.125rem);
+  line-height: 1.5;
+}
+
+.field input {
+  box-sizing: border-box;
+  width: 100%;
+  height: clamp(2rem, 2.083333vw, 2.5rem);
+  padding: 0 0.585938vw;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  font-size: clamp(0.625rem, 0.651042vw, 0.8125rem);
+}
+
+.field input::placeholder {
+  color: #d9d9d9;
+  opacity: 1;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 0.390625vw;
+  margin-top: 1.5625vw;
+  font-size: clamp(0.625rem, 0.651042vw, 0.8125rem);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.agreement input {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  accent-color: #3a5b22;
+  cursor: pointer;
+}
+
+.terms {
+  text-decoration: underline;
+}
+
+.signupButton {
+  display: block;
+  width: 100%;
+  min-height: clamp(2rem, 2.083333vw, 2.5rem);
+  margin-top: 1.822917vw;
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3a5b22;
+  color: #fff;
+  font-family: inherit;
+  font-size: clamp(0.8125rem, 0.846354vw, 1rem);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signupButton:hover {
+  background-color: #304c1c;
+}
+
+.field input:focus-visible,
+.agreement input:focus-visible,
+.signupButton:focus-visible {
+  outline: 2px solid #3a5b22;
+  outline-offset: 3px;
+}
+
 .image {
   display: block;
   width: 100%;
