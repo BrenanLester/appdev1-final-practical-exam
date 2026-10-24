@@ -1,6 +1,7 @@
 import blossomFlower from '../../assets/blossom-flower.svg'
 import googleLogo from '../../assets/icons-google-logo.svg'
 import appleLogo from '../../assets/icons-apple-logo.svg'
+import { Input } from '@/components/ui/input'
 import styles from './SignUp.module.css'
 
 function SignUp() {
@@ -87,4 +88,3 @@ function SignUp() {
 }
 
 export default SignUp
-import { Input } from '@/components/ui/input'
