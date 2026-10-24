@@ -1,4 +1,6 @@
 import blossomFlower from '../../assets/blossom-flower.svg'
+import googleLogo from '../../assets/icons-google-logo.svg'
+import appleLogo from '../../assets/icons-apple-logo.svg'
 import styles from './SignUp.module.css'
 
 function SignUp() {
@@ -52,6 +54,24 @@ function SignUp() {
             Signup
           </button>
         </form>
+        <div className={styles.bottomSection}>
+          <div className={styles.divider}>
+            <span>Or</span>
+          </div>
+          <div className={styles.socialButtons}>
+            <button className={styles.socialButton} type="button">
+              <img src={googleLogo} alt="" width="24" height="24" />
+              <span>Sign in with Google</span>
+            </button>
+            <button className={styles.socialButton} type="button">
+              <img src={appleLogo} alt="" width="24" height="24" />
+              <span>Sign in with Apple</span>
+            </button>
+          </div>
+          <p className={styles.accountPrompt}>
+            Have an account? <span className={styles.signIn}>Sign In</span>
+          </p>
+        </div>
       </section>
       <section className={styles.rightSection} aria-label="Blossom image">
         <img
