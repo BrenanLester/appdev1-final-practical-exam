@@ -14,17 +14,6 @@ function Login() {
         <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
           <div className={styles.fields}>
             <div className={styles.field}>
-              <label htmlFor="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Enter your name"
-                autoComplete="name"
-                required
-              />
-            </div>
-            <div className={styles.field}>
               <label htmlFor="email">Email address</label>
               <input
                 id="email"
@@ -36,25 +25,28 @@ function Login() {
               />
             </div>
             <div className={styles.field}>
-              <label htmlFor="password">Password</label>
+              <div className={styles.passwordLabel}>
+                <label htmlFor="password">Password</label>
+                <a className={styles.forgotPassword} href="#forgot-password">
+                  forgot password
+                </a>
+              </div>
               <input
                 id="password"
                 name="password"
                 type="password"
                 placeholder="Name"
-                autoComplete="new-password"
+                autoComplete="current-password"
                 required
               />
             </div>
           </div>
-          <label className={styles.agreement} htmlFor="terms">
-            <input id="terms" name="terms" type="checkbox" required />
-            <span>
-              I agree to the <span className={styles.terms}>terms &amp; policy</span>
-            </span>
+          <label className={styles.rememberMe} htmlFor="remember">
+            <input id="remember" name="remember" type="checkbox" />
+            <span>Remember for 30 days</span>
           </label>
-          <button className={styles.signupButton} type="submit">
-            Signup
+          <button className={styles.loginButton} type="submit">
+            Login
           </button>
         </form>
         <div className={styles.bottomSection}>

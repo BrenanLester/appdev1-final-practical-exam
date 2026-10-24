@@ -92,7 +92,26 @@
   opacity: 1;
 }
 
-.agreement {
+.passwordLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.forgotPassword {
+  padding-right: 4px;
+  color: #0c2a92;
+  font-size: clamp(0.625rem, 0.716146vw, 0.875rem);
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.rememberMe {
   display: flex;
   align-items: center;
   gap: 0.390625vw;
@@ -102,7 +121,7 @@
   cursor: pointer;
 }
 
-.agreement input {
+.rememberMe input {
   flex-shrink: 0;
   width: 10px;
   height: 10px;
@@ -111,15 +130,11 @@
   cursor: pointer;
 }
 
-.terms {
-  text-decoration: underline;
-}
-
-.signupButton {
+.loginButton {
   display: block;
   width: 100%;
   min-height: clamp(2rem, 2.083333vw, 2.5rem);
-  margin-top: 1.822917vw;
+  margin-top: 1.302083vw;
   padding: 4px 12px;
   border: 0;
   border-radius: 10px;
@@ -131,13 +146,14 @@
   cursor: pointer;
 }
 
-.signupButton:hover {
+.loginButton:hover {
   background-color: #304c1c;
 }
 
 .field input:focus-visible,
-.agreement input:focus-visible,
-.signupButton:focus-visible,
+.rememberMe input:focus-visible,
+.loginButton:focus-visible,
+.forgotPassword:focus-visible,
 .socialButton:focus-visible {
   outline: 2px solid #3a5b22;
   outline-offset: 3px;
