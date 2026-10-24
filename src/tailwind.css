@@ -1,0 +1,15 @@
+/* Keep the existing browser defaults; a global reset would change the design. */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* Map shadcn's theme to the existing design tokens without redefining them. */
+@theme inline {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-text);
+  --color-input: var(--color-border);
+  --color-muted-foreground: var(--color-border);
+  --color-ring: var(--color-primary);
+  --font-sans: var(--font-family-base);
+  --radius-md: var(--border-radius-control);
+}

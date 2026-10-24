@@ -15,7 +15,7 @@ function Login() {
           <div className={styles.fields}>
             <div className={styles.field}>
               <label htmlFor="email">Email address</label>
-              <input
+              <Input
                 id="email"
                 name="email"
                 type="email"
@@ -31,7 +31,7 @@ function Login() {
                   forgot password
                 </a>
               </div>
-              <input
+              <Input
                 id="password"
                 name="password"
                 type="password"
@@ -82,3 +82,4 @@ function Login() {
 }
 
 export default Login
+import { Input } from '@/components/ui/input'

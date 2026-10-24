@@ -12,7 +12,7 @@ function SignUp() {
           <div className={styles.fields}>
             <div className={styles.field}>
               <label htmlFor="name">Name</label>
-              <input
+              <Input
                 id="name"
                 name="name"
                 type="text"
@@ -23,7 +23,7 @@ function SignUp() {
             </div>
             <div className={styles.field}>
               <label htmlFor="email">Email address</label>
-              <input
+              <Input
                 id="email"
                 name="email"
                 type="email"
@@ -34,7 +34,7 @@ function SignUp() {
             </div>
             <div className={styles.field}>
               <label htmlFor="password">Password</label>
-              <input
+              <Input
                 id="password"
                 name="password"
                 type="password"
@@ -87,3 +87,4 @@ function SignUp() {
 }
 
 export default SignUp
+import { Input } from '@/components/ui/input'
